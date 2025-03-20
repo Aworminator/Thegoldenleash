@@ -1,0 +1,145 @@
+* {
+    font-family: "Playwrite PE Guides", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    height: 100vh; /* Ensure the parent has a height */
+    width: 100vw;  /* Ensure the parent has a width */
+}
+
+
+.title {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8em;
+    color: #bfb65a;
+    line-height: 1.2;
+}
+
+.imgR {
+    grid-column: 3; /* Specify the starting and ending lines */
+    grid-row: 1; /* Ensure it is placed in the second row */
+    height: 350px;
+    width: 350px;
+    display: flex;
+}
+
+.imgL {
+    grid-column: 1 / 2; /* Ensure it is placed in the first column */
+    grid-row: 3; /* Ensure it is placed in the third row */
+    height: 350px;
+    width: 350px;
+    display: flex;
+}
+
+.alicia {
+    grid-column: 1; /* Start at column 1 */
+    grid-row: 2 / span 2; /* Start at row 2 and span 2 rows */
+    display: flex;
+    height: 300px;
+    margin-left: 300px;
+    margin-top: -75px;
+    padding-bottom: 500px;
+
+}
+
+.toni {
+    grid-column: 1; /* Start at column 3 */
+    grid-row: 3 / span 3; /* Start at row 2 and span 2 rows */
+    display: flex;
+    height: 300px;
+    margin-left: 300px;
+    margin-top: -75px;
+    padding: auto;
+}
+
+.alicia-info {
+    grid-column: 2; /* Start at column 2 */
+    grid-row: 2; /* Start at row 2 and span 2 rows */
+    display: flex;
+    height: 200px;
+    margin-top: -50px;
+}
+
+.toni-info {
+    grid-column: 2; /* Start at column 2 */
+    grid-row: 3 / span 3; /* Start at row 2 and span 2 rows */
+    display: flex;
+    height: 200px;
+    margin-top: -50px;
+}
+
+p {
+    font-size: 1.7em;
+    font-weight: 600;
+    width: 1000px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+@media (max-width: 844px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        width: 400px;
+        height: 100vh;
+    }
+
+    .title, .imgR, .imgL, .alicia, .toni, .alicia-info, .toni-info {
+        grid-column: 1;
+        grid-row: auto;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: .5rem;
+        width: 200px;
+        height: 200px;
+    }
+
+    .imgL, .imgR {
+        height: 150px;
+        width: 150px;
+    }
+    .imgR {
+        /* margin-right: -150px;  */
+        margin-bottom: -100px;
+
+    }
+
+    .title {
+        font-size: 2.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center  ;
+    }
+    .alicia, .toni {
+        height: 150px;
+        margin: auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; /* Prevent stretching */
+    }
+
+    .alicia {
+        padding-bottom: 10px;
+    }
+
+    .alicia-info {
+        grid-column: 1;
+        grid-row: 4 / span 3;
+        margin: 0 auto;
+    }
+}

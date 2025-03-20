@@ -1,0 +1,245 @@
+/* * {
+    font-family: "Fredoka", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+* {
+    font-family: "Playwrite PE Guides", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: 200px 400px 200px ; /* Defined row heights */
+    gap: 30px; /* Optional spacing */
+    align-items: center;
+    justify-items: center;
+}
+
+.select {
+    /* background-color: lightblue; */
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.title {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 8em;
+    color: #bfb65a;
+    line-height: 1.2;
+}
+
+.imgR {
+height: 350px;
+width: 350px;
+margin-top: -50px; 
+margin-left: 250px;
+display: flex;
+grid-column-start: 4;
+grid-column-end: 5;
+
+}
+
+.imgL {
+    height: 350px;
+    width: 350px;
+    margin-bottom: 120px;
+    margin-right: 290px;
+   
+
+    }
+
+    .select:nth-child(11) {
+        display: flex;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .select:nth-child(4) {  
+        grid-column: 2 / 4;  
+        grid-row: 2 / 4;    
+        width: 100%;         
+        height: 80%;
+    }
+    
+    .select:nth-child(4) p { /* paragraph */
+        display: inline-block; 
+        text-align: center; 
+        font-size: 1.8rem;
+    }
+    
+    @media (max-width: 2100px) {
+        .title {
+            font-size: 6em;
+            line-height: 1.2;
+        }
+        .select:nth-child(4) p {
+        
+            height: 100%;
+            width: 100%;
+        }
+        
+        .select .staff-btn {
+            padding-left: 50px;
+             margin-bottom: 150px; /* Adjust margin to prevent intersection */
+            margin-left: -100px;
+        }
+        .select .staff-icon {
+            position: relative; /* Ensure relative positioning */
+            margin-top: 30px; /* Adjust margin to prevent intersection */
+        }
+    }
+
+    @media (max-width: 1300px) {
+        .title {
+            font-size: 6em;
+            line-height: 1.2;
+        }
+        .select:nth-child(4) p {
+        
+            height: 100%;
+            width: 100%;
+        }
+        
+        .select .staff-btn {
+            width: 300px;
+            height: 100px;
+            padding-left: 50px;
+             margin-bottom: 0px; /* Adjust margin to prevent intersection */
+            margin-left: -100px;
+        }
+        .select .staff-icon {
+            position: relative; /* Ensure relative positioning */
+            margin-top: 30px; /* Adjust margin to prevent intersection */
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .title {
+            font-size: 4em;
+            line-height: 1.3;
+        }
+        .select:nth-child(4) p {
+            height: 80%;
+            width: 800%;
+        }
+        .select .staff-btn {
+            width: 225px;
+            height: 75px;
+            margin-bottom: 400px;
+            margin-left: 450px;
+            top: 750px;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 600px;
+            z-index: 0;
+        }
+        .select .staff-icon {
+            height: 120px;
+            width: 360px;
+        }
+        /* * {
+            background-color: red;
+        } */
+    }
+    
+    @media (max-width: 768px) {
+        .title {
+            font-size: 3em;
+            line-height: 1.4;
+        }
+        .select:nth-child(4) p {
+            height: 50%;
+            width: 50%;
+            font-size: 1rem;
+            margin-top: -500px;
+        }
+        .select .staff-btn {
+            width: 225px;
+            height: 75px;
+            margin-bottom: 400px;
+            margin-left: 300px;
+            top: 650px;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 600px;
+            z-index: 0;
+        }
+        .select .staff-icon {
+            height: 120px;
+            width: 360px;
+            margin-top: -250px;
+            margin-right: 60px;
+        }
+        /* * {
+            background-color: yellow;
+        } */
+    }
+       
+    @media (max-width: 576px) {
+        .title {
+            font-size: 2em;
+            line-height: 1.5;
+            margin: 0; /* Adjusted margin */
+        }
+        .select:nth-child(4) p {
+            height: 20%;
+            width: 20%;
+            margin-top: -600px;
+            font-size: 1rem; 
+        }
+        .staff-btn {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            position: absolute;
+            bottom: 0;
+        }
+        .staff-icon {
+            height: 50px;
+            width: 100px;
+            margin-bottom: 50px;
+            opacity: .5;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .select:nth-child(9) {
+        display: flex;
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+
+    .select:nth-child(10) {
+        display: flex;
+        grid-column: 4 / 5;
+        grid-row: 4 / 5;
+    }
+
+.staff-btn {
+    width: 400px;
+    height: 150px;
+    margin-bottom: 150px;
+    margin-left: 400px;
+}
+
+.staff-icon {
+    height: 200px;
+    width: 600px;
+    margin-bottom: 150px;
+}
