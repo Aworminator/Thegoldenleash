@@ -18,37 +18,52 @@
     line-height: 1.2;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .imgR, .imgL {
     height: 350px;
     width: 350px;
+    background-repeat: repeat; /* Ensures the background repeats */
+    background-size: contain;
+    margin: 20px; /* Adds spacing between repeated elements */
+    position: relative; /* Removes absolute positioning */
 }
 
+
 .imgR {
+    position: absolute;
     align-self: flex-end;
-    margin-right: 20px;
+    top: 0;
 }
 
 .imgL {
+    position: absolute;
     align-self: flex-start;
     margin-left: 20px;
+    bottom: 0;
+    z-index: -1;
 }
 
 .staff-member {
     display: flex;
     align-items: center;
     margin: 20px 0;
+    padding: 10px;
 }
 
-.alicia, .toni {
+.staff-pic {
     height: 300px;
     margin-right: 20px;
 }
 
-.alicia-info, .toni-info {
+.staff-info {
     max-width: 1000px;
-    text-align: left;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 0.488);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 20px;
 }
 
 p {
@@ -58,6 +73,10 @@ p {
 }
 
 @media (max-width: 844px) {
+    * {
+        justify-items: center;
+    }
+
     .parent {
         width: 400px;
         height: auto;
@@ -78,6 +97,10 @@ p {
         width: 100px;
         margin: 10px 0;
         margin: -40px;
+    }
+
+    .staff-member {
+        padding: 0;
     }
 
 
