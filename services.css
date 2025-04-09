@@ -1,7 +1,10 @@
 * {
-        font-family: "Playwrite PE Guides", serif;
-        font-weight: 400;
-        font-style: normal;
+    font-family: "Fredoka", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Replace <weight> with a valid value */
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 .title {
@@ -47,7 +50,7 @@
 .icon-text {
     text-align: center;
     margin-top: -10px;
-    font-size: 3.5em;
+    font-size: 3em;
     text-shadow: 1px 1px 5px rgba(104, 104, 104, 0.583);
     width: 200px;
     margin: 0 auto;
