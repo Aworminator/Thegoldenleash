@@ -1,0 +1,178 @@
+h1 {
+  font-family: "Fredoka", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace <weight> with a valid value */
+  font-style: normal;
+  color: #bfb65a;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+  font-family: "Fredoka", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace <weight> with a valid value */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.logo {
+  height: 500px;
+  width: 500px;
+}
+
+.container {
+  width: 200px; /* Set container size */
+  height: 200px;
+  background-image: url("./Images/GoldenLeashLogo\ No\ Nose.png"),
+    url("./Images/GoldenLeashLogo\ Nose.png");
+  background-position: center, bottom;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+  position: absolute;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%; /* Resize as needed */
+  height: auto;
+  z-index: 1; /* Send it to the back */
+}
+
+@keyframes moveInCircle {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  50% {
+    width: 120%;
+    height: 120%;
+    top: -60px;
+    left: -90px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.foreground {
+  position: absolute;
+  top: 0; /* Adjust as needed */
+  left: 0;
+  padding-top: 15px;
+  width: 100%;
+  height: auto;
+  z-index: 2; /* Bring it to the front */
+  animation: moveInCircle 3s ease-in-out 2;
+  /* animation-duration: 3s; */
+  animation-fill-mode: forwards;
+  pointer-events: none; /* Prevent blocking clicks */
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0; /* Align text properly */
+  padding-top: 10%;
+}
+
+li {
+  display: flex;
+  align-items: center; /* Align icon and text */
+  font-size: 7rem; /* Adjust text size */
+  color: #b3a258; /* Match the golden color */
+  font-weight: bold;
+  padding: 50px;
+}
+
+li::before {
+  content: "";
+  display: inline-block;
+  width: 8rem; /* Adjust icon size */
+  height: 8rem;
+  background: url("./Images/Anchor Smaller.png") no-repeat center;
+  background-size: contain;
+  margin-right: 50px; /* Spacing between icon and text */
+}
+
+.paws {
+}
+.paw-walk {
+  height: 100%;
+  width: 1872px;
+  clip-path: inset(0 0% 0 0);
+  transform: rotate(-20deg);
+  margin-left: -10%;
+  z-index: -1;
+  animation: walk 5s steps(5);
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  pointer-events: none; /* Prevent blocking clicks */
+}
+
+@keyframes walk {
+  0% {
+    clip-path: inset(0 85% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0% 0 0);
+  }
+}
+
+.content {
+  pointer-events: auto; /* Ensure clickable elements remain interactive */
+}
+
+@media screen and (max-width: 480px) {
+  .image-container {
+    display: block; /* Ensure the image container is visible */
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the container */
+  }
+
+  .background,
+  .foreground {
+    width: 100%; /* Ensure images scale properly */
+    height: auto;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content */
+    gap: 2rem; /* Add spacing between items */
+    padding: 2rem; /* Add padding for better spacing */
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column; /* Stack list items vertically */
+    align-items: center; /* Center align list items */
+    gap: 1.5rem; /* Add spacing between list items */
+    padding: 0; /* Remove extra padding */
+  }
+
+  li {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    padding: 1rem; /* Adjust padding for better spacing */
+  }
+
+  li::before {
+    width: 4rem; /* Adjust icon size */
+    height: 4rem;
+    margin-right: 1rem; /* Adjust spacing between icon and text */
+  }
+
+  .paw-walk {
+    width: 100%; /* Adjust width to fit smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    transform: rotate(-20deg); /* Keep rotation */
+    margin-left: 0; /* Center the paw-walk */
+    animation: walk 5s steps(5);
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    pointer-events: none; /* Prevent blocking clicks */
+  }
+}

@@ -1,0 +1,106 @@
+h1 {
+  font-family: "Fredoka", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace <weight> with a valid value */
+  font-style: normal;
+  color: #bfb65a;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+  font-family: "Fredoka", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace <weight> with a valid value */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.container {
+  width: 20px; /* Set container size */
+  height: 20px;
+  background-image: url("./Images/GoldenLeashLogo\ No\ Nose.png"),
+    url("./Images/GoldenLeashLogo\ Nose.png");
+  background-position: center, bottom;
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+  position: absolute;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%; /* Resize as needed */
+  height: auto;
+  z-index: 1; /* Send it to the back */
+}
+
+@keyframes moveInCircle {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  50% {
+    width: 120%;
+    height: 120%;
+    top: -60px;
+    left: -90px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0; /* Align text properly */
+  padding-top: 10%;
+}
+
+li {
+  display: flex;
+  align-items: center; /* Align icon and text */
+  font-size: 7rem; /* Adjust text size */
+  color: #b3a258; /* Match the golden color */
+  font-weight: bold;
+  padding: 50px;
+}
+
+li::before {
+  content: "";
+  display: inline-block;
+  width: 8rem; /* Adjust icon size */
+  height: 8rem;
+  background: url("./Images/Anchor Smaller.png") no-repeat center;
+  background-size: contain;
+  margin-right: 50px; /* Spacing between icon and text */
+}
+
+.paws {
+}
+.paw-walk {
+  height: 100%;
+  width: 1872px;
+  clip-path: inset(0 0% 0 0);
+  transform: rotate(-20deg);
+  margin-left: -10%;
+  z-index: -1;
+  animation: walk 5s steps(5);
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  pointer-events: none; /* Prevent blocking clicks */
+}
+
+@keyframes walk {
+  0% {
+    clip-path: inset(0 85% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0% 0 0);
+  }
+}
+
+.content {
+  pointer-events: auto; /* Ensure clickable elements remain interactive */
+}
