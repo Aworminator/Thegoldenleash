@@ -1,0 +1,40 @@
+h1 {
+  font-family: "Fredoka", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace <weight> with a valid value */
+  font-style: normal;
+  color: #bfb65a;
+  font-variation-settings: "wdth" 100;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.home-page {
+  border: black solid 5px;
+  min-height: 50vh;
+}
+
+.logo {
+  height: 600px;
+  width: auto;
+}
+
+.list {
+  font-size: 3em;
+  padding: 50px;
+}
+
+li {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 900px) {
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

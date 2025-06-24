@@ -22,12 +22,7 @@ h1 {
 
 .our-story {
   border: black solid 5px;
-  min-height: 600px;
-}
-
-.services {
-  border: black solid 5px;
-  min-height: 600px;
+  height: 600px;
 }
 
 .logo {
@@ -44,36 +39,9 @@ li {
   margin-bottom: 80px;
 }
 
-.icon-container {
-  display: flex;
-  justify-content: center;
-}
-
-#icon {
-  background-color: #bfb65a;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  margin: 30px;
-}
-
-#icon:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s;
-}
-
-#icon:active {
-  transform: scale(0.9);
-  transition: transform 0.2s;
-}
-
 .story-info {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 100px;
 }
 

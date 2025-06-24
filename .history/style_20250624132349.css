@@ -67,7 +67,7 @@ li {
 }
 
 #icon:active {
-  transform: scale(0.9);
+  transform: scale(0.8);
   transition: transform 0.2s;
 }
 
