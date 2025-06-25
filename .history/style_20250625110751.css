@@ -20,9 +20,12 @@ h1 {
   min-height: 50vh;
 }
 
-.services,
-.staff,
 .our-story {
+  border: black solid 5px;
+  min-height: 600px;
+}
+
+.services {
   border: black solid 5px;
   min-height: 600px;
 }

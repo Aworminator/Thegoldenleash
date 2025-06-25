@@ -4,5 +4,5 @@ const service = document.querySelector(".services");
 
 house.addEventListener("click", () => {
   serviceInfo.style.display = "block";
-  serviceInfo.scrollIntoView({ behavior: "smooth" });
+  service.scrollIntoView({ behavior: "smooth" });
 });

@@ -20,9 +20,12 @@ h1 {
   min-height: 50vh;
 }
 
-.services,
-.staff,
 .our-story {
+  border: black solid 5px;
+  min-height: 600px;
+}
+
+.services {
   border: black solid 5px;
   min-height: 600px;
 }
@@ -76,22 +79,21 @@ li {
 }
 
 .service-info {
-  display: none;
-  background-color: rgb(182, 182, 182);
+  background-color: gray;
   border-radius: 10px;
-  padding: 5px;
-  animation: slide-fwd-tr 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  padding: 0 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.73, 0.32, 0.34, 1.5),
+    background-color 0.5s, padding 0.5s;
 }
 
-@keyframes slide-fwd-tr {
-  0% {
-    opacity: 0%;
-    transform: translateZ(180px) translateY(120px) translateX(-120px);
-  }
-  100% {
-    opacity: 100%;
-    transform: translateZ(0px) translateY(0px) translateX(0px);
-  }
+.service-info:hover {
+  background-color: rgb(182, 182, 182);
+  max-height: 500px; /* adjust as needed */
+  padding: 20px 5px;
+  transition: max-height 0.5s cubic-bezier(0.73, 0.32, 0.34, 1.5),
+    background-color 0.5s, padding 0.5s;
 }
 
 @media (max-width: 900px) {
