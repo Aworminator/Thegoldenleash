@@ -34,7 +34,7 @@ const staffMembers = [
 const house = document.querySelector(".fa-house");
 const serviceInfo = document.querySelector(".service-info");
 const service = document.querySelector(".services");
-const staffCards = document.querySelector("#staff-cards");
+const staffCards = document.querySelector(".staff-cards");
 
 house.addEventListener("click", () => {
   serviceInfo.style.display = "block";
@@ -53,5 +53,5 @@ staffMembers.forEach((person) => {
           <p class="staff-info">
             ${person.info}
           </p>`;
-  staffCards.appendChild(newCard);
 });
+newCard.appendChild(staffCards);

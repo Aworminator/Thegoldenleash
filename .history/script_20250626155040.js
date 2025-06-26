@@ -34,7 +34,7 @@ const staffMembers = [
 const house = document.querySelector(".fa-house");
 const serviceInfo = document.querySelector(".service-info");
 const service = document.querySelector(".services");
-const staffCards = document.querySelector("#staff-cards");
+const staffCards = document.querySelector(".staff-cards");
 
 house.addEventListener("click", () => {
   serviceInfo.style.display = "block";
@@ -43,15 +43,21 @@ house.addEventListener("click", () => {
 
 staffMembers.forEach((person) => {
   const newCard = document.createElement("div");
-  newCard.classList.add("card");
-  newCard.innerHTML = `<h2>${person.name} - ${person.title}</h2>
+  newCard.addClass("card");
+  newCard.innerHTML = `<h2>Toni Garnica - The Partner in Paws</h2>
           <img
-            src="${person.image}"
-            alt="${person.name} Profile-Pic"
+            src="./Images/Staff Pictures/Toni TGL Picture.jpg"
+            alt=""
             class="profile-pic"
           />
           <p class="staff-info">
-            ${person.info}
+            Toni joined forces with Alicia in 2020 to make The Golden Leash the
+            bark-tastic business it is today. She’s happily married to Alec
+            Garnica, her husband and fellow adventurer, and together they
+            parents of : Obi (their devoted German Shepherd) and their
+            mischievous feline sons, Po (Tuxedo Cat) and Hopper (Black Cat).
+            Toni’s all about loving her people, exploring her creative passions,
+            and walking through life with God by her side—usually with Obi in
+            tow.
           </p>`;
-  staffCards.appendChild(newCard);
 });

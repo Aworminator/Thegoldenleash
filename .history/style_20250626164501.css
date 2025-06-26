@@ -29,10 +29,8 @@ h1 {
 }
 
 .logo {
-  width: 100%;
-  max-width: 600px; /* or whatever the largest size you want */
-  height: auto;
-  display: block;
+  height: 600px;
+  width: auto;
 }
 
 .list {
@@ -155,13 +153,6 @@ li {
   }
 }
 
-@media (max-width: 600px) {
-  .contact-form {
-    padding: 18px 8px 14px 8px;
-    max-width: 95vw;
-  }
-}
-
 /* Contact Form Styles */
 .contact-form {
   max-width: 500px;
@@ -214,4 +205,10 @@ li {
 .contact-btn:hover {
   background: #a49e4a;
   transform: translateY(-2px) scale(1.03);
+}
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 18px 8px 14px 8px;
+    max-width: 95vw;
+  }
 }

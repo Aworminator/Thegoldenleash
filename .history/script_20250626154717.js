@@ -34,24 +34,9 @@ const staffMembers = [
 const house = document.querySelector(".fa-house");
 const serviceInfo = document.querySelector(".service-info");
 const service = document.querySelector(".services");
-const staffCards = document.querySelector("#staff-cards");
+const staffCards = document.querySelector(".staff-cards");
 
 house.addEventListener("click", () => {
   serviceInfo.style.display = "block";
   serviceInfo.scrollIntoView({ behavior: "smooth" });
-});
-
-staffMembers.forEach((person) => {
-  const newCard = document.createElement("div");
-  newCard.classList.add("card");
-  newCard.innerHTML = `<h2>${person.name} - ${person.title}</h2>
-          <img
-            src="${person.image}"
-            alt="${person.name} Profile-Pic"
-            class="profile-pic"
-          />
-          <p class="staff-info">
-            ${person.info}
-          </p>`;
-  staffCards.appendChild(newCard);
 });

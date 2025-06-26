@@ -9,6 +9,16 @@ h1 {
   font-size: 4em;
 }
 
+li {
+  font-family: "Fredoka", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace <weight> with a valid value */
+  font-style: normal;
+  color: #bfb65a;
+  font-variation-settings: "wdth" 100;
+  /* text-align: center; */
+}
+
 .image-container {
   display: flex;
   flex-direction: row;
@@ -29,10 +39,8 @@ h1 {
 }
 
 .logo {
-  width: 100%;
-  max-width: 600px; /* or whatever the largest size you want */
-  height: auto;
-  display: block;
+  height: 600px;
+  width: auto;
 }
 
 .list {
@@ -41,16 +49,7 @@ h1 {
 }
 
 li {
-  font-family: "Fredoka", serif;
-  font-optical-sizing: auto;
-  font-weight: 400; /* Replace <weight> with a valid value */
-  font-style: normal;
-  color: #bfb65a;
-  font-variation-settings: "wdth" 100;
-  font-size: 1.3em;
   margin-bottom: 80px;
-  text-shadow: 3px 3px 0px rgba(191, 183, 90, 0.336),
-    0 0 16px rgba(191, 182, 90, 0.25);
 }
 
 .icon-container {
@@ -155,13 +154,6 @@ li {
   }
 }
 
-@media (max-width: 600px) {
-  .contact-form {
-    padding: 18px 8px 14px 8px;
-    max-width: 95vw;
-  }
-}
-
 /* Contact Form Styles */
 .contact-form {
   max-width: 500px;
@@ -214,4 +206,10 @@ li {
 .contact-btn:hover {
   background: #a49e4a;
   transform: translateY(-2px) scale(1.03);
+}
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 18px 8px 14px 8px;
+    max-width: 95vw;
+  }
 }
