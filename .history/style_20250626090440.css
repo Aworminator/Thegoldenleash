@@ -87,9 +87,7 @@ li {
   height: 500px;
   width: 500px;
   border: 5px solid black;
-  border-radius: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -97,21 +95,6 @@ li {
 .profile-pic {
   height: 200px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: top;
-  width: 200px;
-}
-
-#staff-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.staff-info {
-  padding: 30px;
-  font-size: 1.1em;
 }
 
 @keyframes slide-fwd-tr {
