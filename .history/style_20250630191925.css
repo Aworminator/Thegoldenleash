@@ -100,7 +100,7 @@ li {
 }
 
 .card {
-  min-height: 500px;
+  height: 500px;
   width: 500px;
   border: none;
   border-bottom: 10px solid #bfb65a;
@@ -164,13 +164,8 @@ li {
   }
 
   .staff-info {
-    font-size: 1.2em;
+    font-size: 1em;
     overflow: hidden;
-    padding: 10px;
-  }
-
-  .card {
-    height: 550px;
   }
 
   h1 {

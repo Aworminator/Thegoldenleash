@@ -100,8 +100,8 @@ li {
 }
 
 .card {
-  min-height: 500px;
-  width: 500px;
+  height: 500px;
+  min-width: 500px;
   border: none;
   border-bottom: 10px solid #bfb65a;
   border-right: 10px solid #bfb65a;
