@@ -31,9 +31,6 @@ const staffMembers = [
   },
 ];
 
-const story = document.querySelector("#story");
-const services = document.querySelector("#services");
-const contact = document.querySelector("#contact");
 const house = document.querySelector(".fa-house");
 const dog = document.querySelector(".fa-dog");
 const paw = document.querySelector(".fa-paw");
@@ -45,33 +42,27 @@ const walks = document.querySelector("#walks");
 const daycare = document.querySelector("#daycare");
 const service = document.querySelector(".services");
 const staffCards = document.querySelector("#staff-cards");
-const iconContainer = document.querySelectorAll(".icon-container i");
 
-let allSections = document.querySelectorAll(".service-info");
+house.addEventListener("click", () => {
+  boarding.style.display = "block";
+  boarding.scrollIntoView({ behavior: "smooth" });
 
-// Loop for the list items.
-
-// FIX THIS. Make it go to each section class.
-document.querySelectorAll(".list-item").forEach((list) => {
-  list.addEventListener("click", () => {
-    const targetID = list.id;
-    const targetSection = document.getElementById(targetID);
-
-    if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
-  });
+  if ((grooming.style.display = "block")) {
+    grooming.style.display = "none";
+  } else if ((daycare.style.display = "block")) {
+    daycare.style.display = "none";
+  } else if ((walks.style.display = "block")) {
+    walks.style.display = "none";
+  }
 });
 
-// Loop for the icons.
-iconContainer.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    const sectionId = icon.id;
+dog.addEventListener("click", () => {
+  grooming.style.display = "block";
+  grooming.scrollIntoView({ behavior: "smooth" });
 
-    allSections.forEach((section) => {
-      section.style.display = section.id === sectionId ? "block" : "none";
-    });
-    const targetSection = document.getElementById(sectionId);
-    if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
-  });
+  if ((boarding.style.display = "block")) {
+    boarding.style.display = "none";
+  }
 });
 
 staffMembers.forEach((person) => {

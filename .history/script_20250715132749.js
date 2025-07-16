@@ -31,47 +31,26 @@ const staffMembers = [
   },
 ];
 
-const story = document.querySelector("#story");
-const services = document.querySelector("#services");
-const contact = document.querySelector("#contact");
 const house = document.querySelector(".fa-house");
 const dog = document.querySelector(".fa-dog");
-const paw = document.querySelector(".fa-paw");
-const bath = document.querySelector(".fa-bath");
 const serviceInfo = document.querySelector(".service-info");
-const boarding = document.querySelector("#boarding");
+const home = document.querySelector("#home");
 const grooming = document.querySelector("#grooming");
-const walks = document.querySelector("#walks");
-const daycare = document.querySelector("#daycare");
 const service = document.querySelector(".services");
 const staffCards = document.querySelector("#staff-cards");
-const iconContainer = document.querySelectorAll(".icon-container i");
 
-let allSections = document.querySelectorAll(".service-info");
-
-// Loop for the list items.
-
-// FIX THIS. Make it go to each section class.
-document.querySelectorAll(".list-item").forEach((list) => {
-  list.addEventListener("click", () => {
-    const targetID = list.id;
-    const targetSection = document.getElementById(targetID);
-
-    if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
-  });
+house.addEventListener("click", () => {
+  home.style.display = "block";
+  home.scrollIntoView({ behavior: "smooth" });
 });
 
-// Loop for the icons.
-iconContainer.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    const sectionId = icon.id;
+dog.addEventListener("click", () => {
+  grooming.style.display = "block";
+  grooming.scrollIntoView({ behavior: "smooth" });
 
-    allSections.forEach((section) => {
-      section.style.display = section.id === sectionId ? "block" : "none";
-    });
-    const targetSection = document.getElementById(sectionId);
-    if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
-  });
+  if ((home.style.display = "block")) {
+    home.style.display = "none";
+  }
 });
 
 staffMembers.forEach((person) => {

@@ -75,13 +75,13 @@ li {
 }
 
 .icon:hover,
-.list-item:hover {
+#story {
   transform: scale(1.1);
   transition: transform 0.2s;
 }
 
 .icon:active,
-.list-item:active {
+#story {
   transform: scale(0.9);
   transition: transform 0.2s;
 }

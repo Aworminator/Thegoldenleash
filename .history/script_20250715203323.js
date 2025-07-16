@@ -49,19 +49,6 @@ const iconContainer = document.querySelectorAll(".icon-container i");
 
 let allSections = document.querySelectorAll(".service-info");
 
-// Loop for the list items.
-
-// FIX THIS. Make it go to each section class.
-document.querySelectorAll(".list-item").forEach((list) => {
-  list.addEventListener("click", () => {
-    const targetID = list.id;
-    const targetSection = document.getElementById(targetID);
-
-    if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
-  });
-});
-
-// Loop for the icons.
 iconContainer.forEach((icon) => {
   icon.addEventListener("click", () => {
     const sectionId = icon.id;
@@ -73,6 +60,8 @@ iconContainer.forEach((icon) => {
     if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+// Figure out a way to simplify this as much as possible.
 
 staffMembers.forEach((person) => {
   const newCard = document.createElement("div");

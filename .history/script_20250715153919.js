@@ -31,9 +31,6 @@ const staffMembers = [
   },
 ];
 
-const story = document.querySelector("#story");
-const services = document.querySelector("#services");
-const contact = document.querySelector("#contact");
 const house = document.querySelector(".fa-house");
 const dog = document.querySelector(".fa-dog");
 const paw = document.querySelector(".fa-paw");
@@ -45,34 +42,22 @@ const walks = document.querySelector("#walks");
 const daycare = document.querySelector("#daycare");
 const service = document.querySelector(".services");
 const staffCards = document.querySelector("#staff-cards");
-const iconContainer = document.querySelectorAll(".icon-container i");
 
 let allSections = document.querySelectorAll(".service-info");
 
-// Loop for the list items.
-
-// FIX THIS. Make it go to each section class.
-document.querySelectorAll(".list-item").forEach((list) => {
-  list.addEventListener("click", () => {
-    const targetID = list.id;
-    const targetSection = document.getElementById(targetID);
-
-    if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
-  });
+house.addEventListener("click", () => {
+  const targetID = icon.id;
+  console.log(targetID);
 });
 
-// Loop for the icons.
-iconContainer.forEach((icon) => {
+document.querySelectorAll("icon-container i").forEach((icon) => {
   icon.addEventListener("click", () => {
-    const sectionId = icon.id;
-
-    allSections.forEach((section) => {
-      section.style.display = section.id === sectionId ? "block" : "none";
-    });
-    const targetSection = document.getElementById(sectionId);
-    if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
+    const targetID = icon.id;
+    console.log(targetID);
   });
 });
+
+// Figure out a way to simplify this as much as possible.
 
 staffMembers.forEach((person) => {
   const newCard = document.createElement("div");

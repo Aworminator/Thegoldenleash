@@ -31,9 +31,6 @@ const staffMembers = [
   },
 ];
 
-const story = document.querySelector("#story");
-const services = document.querySelector("#services");
-const contact = document.querySelector("#contact");
 const house = document.querySelector(".fa-house");
 const dog = document.querySelector(".fa-dog");
 const paw = document.querySelector(".fa-paw");
@@ -45,32 +42,28 @@ const walks = document.querySelector("#walks");
 const daycare = document.querySelector("#daycare");
 const service = document.querySelector(".services");
 const staffCards = document.querySelector("#staff-cards");
-const iconContainer = document.querySelectorAll(".icon-container i");
 
-let allSections = document.querySelectorAll(".service-info");
+const sections = {
+  "fa-house": boarding,
+  "fa-dog": daycare,
+  "fa-paw": walks,
+  "fa-bath": grooming,
+};
 
-// Loop for the list items.
-
-// FIX THIS. Make it go to each section class.
-document.querySelectorAll(".list-item").forEach((list) => {
-  list.addEventListener("click", () => {
-    const targetID = list.id;
-    const targetSection = document.getElementById(targetID);
-
-    if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
-  });
-});
-
-// Loop for the icons.
-iconContainer.forEach((icon) => {
+document.querySelectorAll(".icon-container i").forEach((icon) => {
   icon.addEventListener("click", () => {
-    const sectionId = icon.id;
+    const targetClass = [...icon.classList].find(
+      (cls) => cls.startsWith("fa-") && cls !== "fa-solid"
+    );
+    const targetSection = sections[targetClass];
 
-    allSections.forEach((section) => {
-      section.style.display = section.id === sectionId ? "block" : "none";
+    // Show the correct section, hide the others
+    Object.values(sections).forEach((section) => {
+      section.style.display = section === targetSection ? "block" : "none";
     });
-    const targetSection = document.getElementById(sectionId);
-    if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
+
+    // Scroll into view
+    targetSection.scrollIntoView({ behavior: "smooth" });
   });
 });
 

@@ -50,11 +50,9 @@ const iconContainer = document.querySelectorAll(".icon-container i");
 let allSections = document.querySelectorAll(".service-info");
 
 // Loop for the list items.
-
-// FIX THIS. Make it go to each section class.
 document.querySelectorAll(".list-item").forEach((list) => {
   list.addEventListener("click", () => {
-    const targetID = list.id;
+    const targetID = list.getAttribute("data-target");
     const targetSection = document.getElementById(targetID);
 
     if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
