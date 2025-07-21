@@ -32,11 +32,8 @@ const staffMembers = [
 ];
 
 const story = document.querySelector("#story");
-const services = document.querySelector("#service");
+const services = document.querySelector("#services");
 const contact = document.querySelector("#contact");
-const storySection = document.querySelector(".our-story");
-const servicesSection = document.querySelector(".services");
-const contactSection = document.querySelector(".contact");
 const house = document.querySelector(".fa-house");
 const dog = document.querySelector(".fa-dog");
 const paw = document.querySelector(".fa-paw");
@@ -64,17 +61,7 @@ document.querySelectorAll(".list-item").forEach((list) => {
   });
 });
 
-story.addEventListener("click", () => {
-  storySection.scrollIntoView({ behavior: "smooth" });
-});
-
-services.addEventListener("click", () => {
-  servicesSection.scrollIntoView({ behavior: "smooth" });
-});
-
-contact.addEventListener("click", () => {
-  contactSection.scrollIntoView({ behavior: "smooth" });
-});
+services
 
 // Loop for the icons.
 iconContainer.forEach((icon) => {

@@ -32,7 +32,7 @@ const staffMembers = [
 ];
 
 const story = document.querySelector("#story");
-const services = document.querySelector("#service");
+const services = document.querySelector("#services");
 const contact = document.querySelector("#contact");
 const storySection = document.querySelector(".our-story");
 const servicesSection = document.querySelector(".services");
@@ -70,10 +70,6 @@ story.addEventListener("click", () => {
 
 services.addEventListener("click", () => {
   servicesSection.scrollIntoView({ behavior: "smooth" });
-});
-
-contact.addEventListener("click", () => {
-  contactSection.scrollIntoView({ behavior: "smooth" });
 });
 
 // Loop for the icons.

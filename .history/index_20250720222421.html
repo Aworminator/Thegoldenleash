@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Golden Leash</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Everything is great. Look up ideas on how to make everything else translate
+    with media query. The logo is fixed, however, other things get messed up after
+    the resolution hits a certain point. Figure out how to fix that next. -->
+  </head>
+  <body>
+    <section class="home-page">
+      <div class="image-container">
+        <div>
+          <img src="./Images/GoldenLeashLogo No Nose.png" class="logo" />
+        </div>
+
+        <ul class="list">
+          <li class="list-item" data-target="our-story">Our Story</li>
+          <li class="list-item" data-target="services">Services</li>
+          <li class="list-item" data-target="contact">Contact Us</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="our-story">
+      <h1>Our Story</h1>
+      <p class="story-info info">
+        Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean quis
+        bibendum condimentum mauris primis integer sollicitudin porttitor.
+        Blandit condimentum aptent condimentum orci rhoncus pellentesque euismod
+        a. Varius imperdiet fermentum aptent mollis sem eu. Mattis ante pharetra
+        quisque nam odio nascetur per. Vitae pellentesque massa facilisi
+        maecenas ligula felis. Tristique pulvinar iaculis inceptos lectus elit
+        fusce. <br /><br />
+        Nisl erat purus sem imperdiet varius erat taciti cursus. Leo ante lectus
+        potenti lacus viverra senectus commodo fringilla. Imperdiet est
+        parturient ornare imperdiet tempor vulputate. Parturient porttitor
+        quisque platea turpis vel porta. Torquent feugiat curabitur posuere
+        hendrerit ipsum eros vel erat. Aenean netus proin arcu taciti nec
+        efficitur ullamcorper.
+      </p>
+    </section>
+
+    <section class="services">
+      <h1>Services</h1>
+      <div class="icon-container">
+        <i class="fa-solid fa-house icon" id="boarding"></i>
+        <i class="fa-solid fa-dog icon" id="daycare"></i>
+        <i class="fa-solid fa-paw icon" id="walks"></i>
+        <i class="fa-solid fa-bath icon" id="grooming"></i>
+      </div>
+      <h1>Click for Info</h1>
+      <p class="service-info info" id="boarding">
+        
+      </p>
+      <p class="service-info info" id="daycare">
+        
+      </p>
+      <p class="service-info info" id="walks">
+        At The Golden Leash, we bring personalized care directly to you! Our
+        team will stop by to check on your dog and take them for a walk tailored
+        to their needs. Each walk typically lasts around 45 minutes, giving your
+        pup plenty of exercise and attention. <br /><br />
+        Your dog's safety and well-being are our top priorities. That’s why we
+        monitor the weather closely, ensuring your furry friend isn’t exposed to
+        unsafe conditions. We avoid walks in temperatures below 28°F, and during
+        extreme heat, we’ll adjust walk times to protect your dog’s paws from
+        hot sidewalks. Because your dog deserves the very best care—rain, shine,
+        or snow!
+      </p>
+      <p class="service-info info" id="grooming">
+        This will be the information for grooming
+      </p>
+    </section>
+
+    <section class="staff">
+      <h1>Meet The Staff!</h1>
+      <div id="staff-cards"></div>
+    </section>
+
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

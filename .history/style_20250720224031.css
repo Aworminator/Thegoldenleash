@@ -9,8 +9,6 @@ h1 {
   font-size: 4em;
 }
 
-/* Everything is looking great, just add paw background repate */
-
 h2 {
   text-align: center;
 }
@@ -34,43 +32,11 @@ h2 {
   min-height: 600px;
 }
 
-.logo-container {
-  position: relative;
-  display: inline-block; /* or block, as needed */
-}
-
 .logo {
+  width: 100%;
+  max-width: 600px; /* or whatever the largest size you want */
+  height: auto;
   display: block;
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-}
-
-.nose {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: auto;
-  animation: nose-move 4s ease-in-out;
-}
-@keyframes nose-move {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  25% {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-  75% {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-  }
 }
 
 .list {
@@ -129,19 +95,16 @@ li {
 
 .service-info {
   display: none;
-  max-width: 1000px;
-  /* width: 100%; */
+  max-width: 1200px;
+  width: 100%;
   margin: 80px auto;
-  background-color: rgb(229, 229, 229);
+  background-color: rgb(215, 215, 215);
   border-radius: 10px;
   padding: 5px;
   animation: slide-fwd-tr 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .service-info p {
-  max-width: 500px;
-  /* width: 1000%; */
-  margin: 50px auto;
 }
 
 .card {

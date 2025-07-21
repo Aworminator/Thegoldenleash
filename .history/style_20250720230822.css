@@ -9,8 +9,6 @@ h1 {
   font-size: 4em;
 }
 
-/* Everything is looking great, just add paw background repate */
-
 h2 {
   text-align: center;
 }
@@ -47,29 +45,29 @@ h2 {
 }
 
 .nose {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: auto;
-  animation: nose-move 4s ease-in-out;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+height: auto;
+animation: nose-move 3s ease-in-out;
 }
 @keyframes nose-move {
   0% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
   }
   25% {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-40%, -50%);
   }
   50% {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-60%, -50%);
   }
   75% {
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: translate(-40%, -50%);
   }
   100% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
   }
 }
 
