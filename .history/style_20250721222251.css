@@ -22,38 +22,32 @@ h2 {
 }
 
 .home-page {
-  border: black solid 5px;
-  min-height: 50vh;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
-    ),
-    url("./Images/Paws.png");
-  background-repeat: no-repeat;
-  background-position: 80%;
+border: black solid 5px;
+min-height: 50vh;
+background-image: linear-gradient(
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.4)
+  ),
+  url("./Images/Paws.png");
+background-repeat: no-repeat;
+background-position: 80%;
+/* Fade in from left to right using mask */
+mask-image: linear-gradient(to right, black 0%, transparent 0%);
+mask-size: 100% 100%;
+mask-repeat: no-repeat;
+animation: paws-bg-fade 2s forwards;
 }
 
-@keyframes paws-bg-move {
+@keyframes paws-bg-fade {
   0% {
-    background-position: 160%;
-  }
-  25% {
-    background-position: 140%;
-  }
-  50% {
-    background-position: 120%;
-  }
-  75% {
-    background-position: 100%;
+    mask-image: linear-gradient(to right, black 0%, transparent 0%);
   }
   100% {
-    background-position: 80%;
+    mask-image: linear-gradient(to right, black 100%, transparent 100%);
   }
 }
 
-.home-page {
-  animation: paws-bg-move 5s;
-}
+
 
 .services,
 .staff,

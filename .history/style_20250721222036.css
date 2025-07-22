@@ -35,15 +35,9 @@ h2 {
 
 @keyframes paws-bg-move {
   0% {
-    background-position: 160%;
-  }
-  25% {
-    background-position: 140%;
-  }
-  50% {
     background-position: 120%;
   }
-  75% {
+  50% {
     background-position: 100%;
   }
   100% {
@@ -52,7 +46,7 @@ h2 {
 }
 
 .home-page {
-  animation: paws-bg-move 5s;
+  animation: paws-bg-move 2s steps(3);
 }
 
 .services,

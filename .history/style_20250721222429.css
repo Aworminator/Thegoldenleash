@@ -35,16 +35,10 @@ h2 {
 
 @keyframes paws-bg-move {
   0% {
-    background-position: 160%;
-  }
-  25% {
-    background-position: 140%;
+    background-position: 150%;
   }
   50% {
-    background-position: 120%;
-  }
-  75% {
-    background-position: 100%;
+    background-position: 110%;
   }
   100% {
     background-position: 80%;
@@ -52,14 +46,16 @@ h2 {
 }
 
 .home-page {
-  animation: paws-bg-move 5s;
+  animation: paws-bg-move 3s;
 }
 
+.home-page
 .services,
 .staff,
 .contact,
 .our-story {
   border: black solid 5px;
+  border-radius: 20px;
   min-height: 600px;
 }
 

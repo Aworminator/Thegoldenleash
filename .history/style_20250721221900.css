@@ -33,18 +33,18 @@ h2 {
   background-position: 80%;
 }
 
+/* Add paw background repeat */
+.home-page {
+  background-repeat: repeat;
+}
+
+/* Animate paw background movement */
 @keyframes paws-bg-move {
   0% {
-    background-position: 160%;
-  }
-  25% {
-    background-position: 140%;
+    background-position: 20%;
   }
   50% {
-    background-position: 120%;
-  }
-  75% {
-    background-position: 100%;
+    background-position: 50%;
   }
   100% {
     background-position: 80%;
@@ -52,7 +52,7 @@ h2 {
 }
 
 .home-page {
-  animation: paws-bg-move 5s;
+  animation: paws-bg-move 3s ease-in-out;
 }
 
 .services,

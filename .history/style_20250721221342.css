@@ -24,35 +24,9 @@ h2 {
 .home-page {
   border: black solid 5px;
   min-height: 50vh;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
-    ),
-    url("./Images/Paws.png");
+  background-image: url("./Images/Paws.png");
   background-repeat: no-repeat;
-  background-position: 80%;
-}
-
-@keyframes paws-bg-move {
-  0% {
-    background-position: 160%;
-  }
-  25% {
-    background-position: 140%;
-  }
-  50% {
-    background-position: 120%;
-  }
-  75% {
-    background-position: 100%;
-  }
-  100% {
-    background-position: 80%;
-  }
-}
-
-.home-page {
-  animation: paws-bg-move 5s;
+  background-position: 20%;
 }
 
 .services,
