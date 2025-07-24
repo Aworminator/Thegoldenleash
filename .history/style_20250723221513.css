@@ -1,4 +1,5 @@
-h1 {
+h1,
+.clickForInfo {
   font-family: "Fredoka", serif;
   font-optical-sizing: auto;
   font-weight: 400; /* Replace <weight> with a valid value */
@@ -13,11 +14,6 @@ h1 {
 
 h2 {
   text-align: center;
-}
-
-.clickForInfo {
-  font-family: "Fredoka", serif;
-  color: #bfb65a;
 }
 
 .image-container {
@@ -64,7 +60,7 @@ h2 {
 .staff,
 .contact,
 .our-story {
-  border: black solid 3px;
+  border: black solid 5px;
   min-height: 600px;
 }
 
@@ -140,13 +136,6 @@ li {
   align-items: center;
   font-size: 2em;
   margin: 30px;
-}
-
-.contact-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .icon:hover,
@@ -231,14 +220,6 @@ li {
   font-size: 1.1em;
 }
 
-.address-phone {
-  text-align: center;
-}
-
-.contact {
-  font-size: 1.3em;
-}
-
 @keyframes slide-fwd-tr {
   0% {
     opacity: 0%;
@@ -259,6 +240,7 @@ li {
   .info {
     font-size: 0.8em;
     width: 50%;
+    /* figure out a way to make this wider */
   }
 
   .icon {
@@ -293,11 +275,6 @@ li {
   h2 {
     font-size: 1.2em;
     padding: 5px;
-  }
-
-  .fa-mobile,
-  .fa-phone {
-    transform: scale(0.8);
   }
 }
 

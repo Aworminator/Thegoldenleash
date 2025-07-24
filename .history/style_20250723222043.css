@@ -142,13 +142,6 @@ li {
   margin: 30px;
 }
 
-.contact-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 .icon:hover,
 .list-item:hover {
   transform: scale(1.1);
@@ -232,11 +225,7 @@ li {
 }
 
 .address-phone {
-  text-align: center;
-}
-
-.contact {
-  font-size: 1.3em;
+  font
 }
 
 @keyframes slide-fwd-tr {
@@ -259,6 +248,7 @@ li {
   .info {
     font-size: 0.8em;
     width: 50%;
+    /* figure out a way to make this wider */
   }
 
   .icon {
@@ -293,11 +283,6 @@ li {
   h2 {
     font-size: 1.2em;
     padding: 5px;
-  }
-
-  .fa-mobile,
-  .fa-phone {
-    transform: scale(0.8);
   }
 }
 

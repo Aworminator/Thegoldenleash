@@ -142,11 +142,16 @@ li {
   margin: 30px;
 }
 
-.contact-icons {
+.fa-phone, .fa-mobile {
+background-color: #bfb65a;
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: 2em;
+  margin: 30px;
 }
 
 .icon:hover,
@@ -259,6 +264,7 @@ li {
   .info {
     font-size: 0.8em;
     width: 50%;
+    /* figure out a way to make this wider */
   }
 
   .icon {
@@ -293,11 +299,6 @@ li {
   h2 {
     font-size: 1.2em;
     padding: 5px;
-  }
-
-  .fa-mobile,
-  .fa-phone {
-    transform: scale(0.8);
   }
 }
 

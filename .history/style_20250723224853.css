@@ -295,9 +295,9 @@ li {
     padding: 5px;
   }
 
-  .fa-mobile,
-  .fa-phone {
-    transform: scale(0.8);
+  .mobile,
+  .phone {
+    transform: scale(0.5);
   }
 }
 

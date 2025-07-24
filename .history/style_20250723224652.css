@@ -264,6 +264,7 @@ li {
   .icon {
     font-size: 1.4em;
     margin: 15px;
+    background-repeat: repeat;
   }
 
   .staff-info {
@@ -293,11 +294,6 @@ li {
   h2 {
     font-size: 1.2em;
     padding: 5px;
-  }
-
-  .fa-mobile,
-  .fa-phone {
-    transform: scale(0.8);
   }
 }
 
